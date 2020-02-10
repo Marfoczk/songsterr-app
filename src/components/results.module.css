@@ -1,0 +1,29 @@
+.result {
+    border-top: 1px solid #d2d2d2;
+    padding-top: .5rem;
+    flex:1 1 auto; 
+    width:40%;
+    margin: 0.4rem 1rem;
+    color: #4f4f4f;
+    text-decoration: none;
+}
+
+.result a {
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+.result a:hover {
+    color: #e74c3c;
+
+}
+
+.result__tabulars {
+    list-style: none;
+    font-size: 12px;
+    padding-top: .5rem;
+}
+
+.result__tabulars p {
+    font-weight: 700;
+}
