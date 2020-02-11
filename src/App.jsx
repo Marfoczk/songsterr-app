@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Buttons from "./components/Buttons/Buttons";
 import Results from "./components/Results/Results";
-import "./App.scss";
+import styles from "./App.module.scss";
 
 const TABS = ["PLAYER", "CHORDS", "TEXT_BASS_TAB", "TEXT_GUITAR_TAB"];
 
@@ -27,20 +27,19 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <form className="form" onSubmit={fetchSongs}>
+    <div className={styles.app}>
+      <form className={styles.form} onSubmit={fetchSongs}>
         <input
-          className="form__input"
+          className={styles.input}
           type="text"
           value={search}
           onChange={updateSearch}
         />
-        <button className="form__button" type="submit">
+        <button className={styles.button} type="submit">
           Search
         </button>
         <Buttons tabs={TABS} onButtonClick={setSelectedTab} selectedTab={selectedTab} />
       </form>
-
       <Results results={results} selectedTab={selectedTab} isLoading={isLoading} />
     </div>
   );

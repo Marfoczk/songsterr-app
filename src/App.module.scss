@@ -1,0 +1,51 @@
+@import "./styles/colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f3f3f3;
+}
+
+.app {
+  text-align: center;
+  width: 75%;
+  margin: 5px auto;
+  & .form {
+    padding: 20px 0;
+
+    & .input {
+      background: transparent;
+      border: 0;
+      border-bottom: solid 2px #2c3e50;
+      margin-right: 10px;
+      letter-spacing: 2px;
+      padding: 0.4rem;
+      width: 30%;
+      outline: none;
+    }
+    & .button {
+      font-family: "Montserrat", sans-serif;
+      border: solid 2px $accent;
+      background: transparent;
+      padding: 0.2rem 0.9rem;
+      border-radius: 1px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin: 0 0.2rem 0 0.7rem;
+      transition-duration: 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        border: solid 2px $accent;
+        background-color: $accent;
+        color: white;
+      }
+    }
+  }
+}
