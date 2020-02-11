@@ -36,7 +36,7 @@ function App() {
         <button className="form__button" type="submit">
           Search
         </button>
-        <Buttons types={TABS} onButtonClick={setSelectedTab} />
+        <Buttons tabs={TABS} onButtonClick={setSelectedTab} selectedTab={selectedTab} />
       </form>
 
       <Results results={results} selectedTab={selectedTab} />

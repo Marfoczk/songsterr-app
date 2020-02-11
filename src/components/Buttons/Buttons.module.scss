@@ -27,5 +27,9 @@
     }
   }
 
+  & .selectedButton {
+    background-color: darken($color: $accent, $amount: 20);
+  }
+
 }
 

@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./Buttons.module.scss";
 
-const Buttons = ({ types, onButtonClick }) => (
+const Buttons = ({ tabs, onButtonClick, selectedTab }) => (
   <div className={styles.container}>
-    {types.map((type, index) => (
+    {tabs.map((tab, index) => (
       <button
-        className={styles.button}
+        className={selectedTab === tab ? `${styles.button} ${styles.selectedButton}` : styles.button}
         key={`btn-${index}`}
-        onClick={() => onButtonClick(type)}
+        onClick={() => onButtonClick(tab)}
       >
-        {type}
+        {tab}
       </button>
     ))}
   </div>
