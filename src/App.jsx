@@ -9,15 +9,17 @@ function App() {
   const [results, setResults] = useState([]);
   const [search, setSearch] = useState("");
   const [selectedTab, setSelectedTab] = useState();
+  const [isLoading, setIsLoading] = useState(false);
 
   const fetchSongs = async e => {
     e.preventDefault();
-
+    setIsLoading(true);
     const res = await fetch(
       `http://www.songsterr.com/a/ra/songs.json?pattern=${search}`
     );
     const data = await res.json();
     setResults(data);
+    setIsLoading(false);
   };
 
   const updateSearch = e => {
@@ -39,7 +41,7 @@ function App() {
         <Buttons tabs={TABS} onButtonClick={setSelectedTab} selectedTab={selectedTab} />
       </form>
 
-      <Results results={results} selectedTab={selectedTab} />
+      <Results results={results} selectedTab={selectedTab} isLoading={isLoading} />
     </div>
   );
 }
