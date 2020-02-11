@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/songsterr-app/static/css/main.663485eb.chunk.css",
+    "main.js": "/songsterr-app/static/js/main.643df426.chunk.js",
+    "main.js.map": "/songsterr-app/static/js/main.643df426.chunk.js.map",
+    "runtime-main.js": "/songsterr-app/static/js/runtime-main.b0268f1b.js",
+    "runtime-main.js.map": "/songsterr-app/static/js/runtime-main.b0268f1b.js.map",
+    "static/js/2.4e076a8a.chunk.js": "/songsterr-app/static/js/2.4e076a8a.chunk.js",
+    "static/js/2.4e076a8a.chunk.js.map": "/songsterr-app/static/js/2.4e076a8a.chunk.js.map",
+    "index.html": "/songsterr-app/index.html",
+    "precache-manifest.f882a87aa77ef2057a96009a01df724c.js": "/songsterr-app/precache-manifest.f882a87aa77ef2057a96009a01df724c.js",
+    "service-worker.js": "/songsterr-app/service-worker.js",
+    "static/css/main.663485eb.chunk.css.map": "/songsterr-app/static/css/main.663485eb.chunk.css.map",
+    "static/js/2.4e076a8a.chunk.js.LICENSE.txt": "/songsterr-app/static/js/2.4e076a8a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b0268f1b.js",
+    "static/js/2.4e076a8a.chunk.js",
+    "static/css/main.663485eb.chunk.css",
+    "static/js/main.643df426.chunk.js"
+  ]
+}
