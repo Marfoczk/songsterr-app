@@ -1,0 +1,31 @@
+@import '../../styles/colors';
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  justify-content:  center;
+
+  & .button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: $accent;
+    border: solid 2px white;
+    padding: 0.4rem 0.9rem;
+    margin: 0 0.2rem;
+    display: inline-block;
+    transition-duration: 0.3s;
+
+    &:hover {
+        color: black;
+        font-weight: 500;
+        background-color: #fff;
+        border: solid 2px $accent;
+        cursor: pointer;
+    }
+  }
+
+}
+
